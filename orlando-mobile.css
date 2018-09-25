@@ -1,0 +1,241 @@
+/*Tamanho padrão para Tablets*/
+@media only screen and (max-width: 768px) {
+  .container-times {
+    display: none;
+  }
+  header {
+    height: none;
+  }
+  .header-black {
+    background-color: #000;
+    height: 40px;
+  }
+}
+/*Tamanh padrão para smarthphones*/
+@media only screen and (max-width: 480px) {
+  .header-black {
+    background-color: #000;
+    height: 40px;
+    z-index: 2;
+  }
+
+  .container-times li {
+    display: none;
+  }
+
+  header #logotipo {
+    left: 32%;
+    transition: 1.5s;
+  }
+  header.open-menu #logotipo {
+    transform: rotate(360deg);
+  }
+
+  #container-logo {
+    width: 100%;
+    margin-left: 3px;
+    z-index: 6;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #btn-bars,
+  #btn-search {
+    color: #fff;
+    font-size: 22px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 4px;
+    display: block;
+  }
+  #btn-bars {
+    left: 10px;
+    padding: 0 10px;
+    outline: 0;
+  }
+  #btn-search {
+    right: 10px;
+    padding: 0 10px;
+    outline: 0;
+  }
+  #banner {
+    width: 100%;
+    height: 375px;
+    position: relative;
+    background-position: -97px -37px;
+    top: -130px;
+    background-size: cover;
+  }
+  #banner h1 {
+    top: 145px;
+    font-size: 46px;
+    margin-left: 23px;
+  }
+  #banner h1 small {
+    font-size: 15px;
+  }
+  #news {
+    width: 400px;
+    margin: 0;
+  }
+  #news .thumbnails-inner img {
+    width: 375px;
+  }
+  #news h2 {
+    text-align: -webkit-auto;
+    margin: 0 0;
+    text-align: center;
+  }
+  #news .thumbnails {
+    width: 326px;
+    text-align: start;
+  }
+  #estatisticas {
+    height: 550px;
+  }
+  #call-to-action h2 {
+    font-size: 23px;
+  }
+  #call-to-action .row-max-400 {
+    margin: 0px -20px;
+  }
+
+  .row .btn btn-roxo {
+    left: 0;
+    margin: 0px;
+  }
+  .row .btn btn-amarelo {
+    right: 0;
+    margin: 0px;
+  }
+  .copyright-mobile p {
+    font-size: 10px;
+    position: absolute;
+  }
+  footer .text-roxo {
+    margin-left: 118px;
+    position: absolute;
+    margin-top: 7px;
+  }
+  footer .pull-left {
+    position: absolute;
+    color: #666;
+    margin-top: -12px;
+    margin-left: 63px;
+  }
+
+  footer .list-socials {
+    width: 367px;
+    position: absolute;
+    margin-top: 28px;
+    margin-right: -10px;
+    margin-left: 2px;
+  }
+
+  footer .list-socials a {
+    width: 56px;
+    height: 59px;
+    line-height: 28px;
+    border-radius: 37px;
+  }
+  footer .list-socials i {
+    font-size: 45px;
+  }
+  footer .page-up {
+    display: inline-block !important;
+  }
+  .btn-localizacao {
+    left: 0;
+  }
+  .btn-telefone {
+    right: 0;
+  }
+  header .header-black {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  header #menu-mobile {
+    position: fixed;
+    top: 40px;
+    background: #fff;
+    width: 80%;
+    height: 100%;
+    left: -80%;
+    z-index: 5;
+  }
+
+  header.open-menu #menu-mobile {
+    left: 0;
+  }
+
+  header.open-menu #menu-mobile-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  header.open-menu #logotipo {
+    position: fixed;
+    top: 50px;
+    height: 76px;
+    left: calc(40% - 33px);
+  }
+
+  header.open-menu #menu-mobile ul {
+    width: 86%;
+    margin-top: 110px;
+  }
+  header.open-menu #menu-mobile li {
+    text-align: center;
+    border-top: #ccc 1px solid;
+    border-bottom: #ccc 1px solid;
+    display: block;
+    padding: 18px;
+  }
+  header.open-menu #menu-mobile li a {
+    color: #633392;
+    font-family: "OpenSans";
+    font-size: 16px;
+    padding: 10px;
+  }
+  header.open-menu .bar-close {
+    position: absolute;
+    bottom: 40px;
+    background-color: #633492;
+    height: 40px;
+    width: 100%;
+  }
+  header.open-menu .bar-close .btn-close {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+  }
+  header #input-search-mobile {
+    transition: 1s;
+    top: -40px;
+    width: 64%;
+    position: fixed;
+    left: 17%;
+    background-color: #000;
+    border: none;
+    height: 40px;
+    color: #fff;
+    outline: 0;
+  }
+
+  header.open-search #input-search-mobile {
+    top: 0;
+  }
+  header.open-search .header-black {
+    z-index: 7;
+  }
+}
